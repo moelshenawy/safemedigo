@@ -1,0 +1,440 @@
+// Import Fonts
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+
+/* Start Global Variables */
+
+:root {
+  --main-green-color: #004747;
+  --sec-green-color: #c5dfdc;
+  --light-green-color: #e7edec;
+  --main-dark-color: #000000;
+  --main-white-color: #ffffff;
+  --sec-white-color: #fafafa;
+  --main-gray-color: #8d8d8d;
+  --main-cyan-color: #00ccb5;
+  --sec-cyan-color: #00f3bb;
+
+  --font-bold: 700;
+  --font-medium: 500;
+  --font-regular: 400;
+  --font-sem-bold: 600;
+
+  --open-sans-font: "Open Sans", sans-serif;
+  --quickstand-font: "Quicksand", sans-serif;
+}
+
+html,
+body {
+  font-family: "Quicksand", sans-serif !important;
+  scroll-behavior: smooth !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+// MUI overrides classes
+.MuiOutlinedInput-notchedOutline {
+  border-color: transparent !important;
+  color: red;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-width: 1px !important;
+  border-color: #004747 !important;
+}
+
+.MuiSelect-icon {
+  color: #000000 !important;
+  width: 14.84px;
+  height: 8.48px;
+  transition: all 0.3s ease;
+}
+
+// Carsouel overrides Classes
+article {
+  .rec .rec-item-wrapper {
+    overflow: unset;
+  }
+  .rec .rec-swipable {
+    height: 350px;
+  }
+
+  .rec .rec-item-wrapper {
+    // width: 230px !important;
+    // margin-right: 14px;
+  }
+}
+
+/* square buttons */
+.rec.rec-arrow {
+  border-radius: 0;
+  border-radius: 50%;
+  background-color: var(--main-white-color);
+  color: var(--main-dark-color);
+  box-shadow: none;
+  box-shadow: 0px 3px 6px #00000029;
+}
+/* round buttons on hover */
+.rec.rec-arrow:hover {
+  box-shadow: none;
+  box-shadow: 0px 3px 6px #00000029;
+
+  color: var(--main-dark-color) !important;
+  background-color: var(--main-white-color) !important;
+}
+
+// Hero section (Home Page)
+section#Hero_hero__M5nJ2 {
+  .rec {
+    button {
+      // opacity: 0;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      &:disabled {
+        visibility: hidden;
+      }
+    }
+
+    .left_arrow,
+    .right_arrow {
+      background-color: var(--main-white-color);
+      box-shadow: 0px 3px 6px #00000029;
+
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+
+      position: absolute;
+      z-index: 11;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        color: var(--main-dark-color);
+        font-size: 25px;
+      }
+    }
+
+    .left_arrow {
+      left: 6px;
+      top: 42%;
+    }
+    .right_arrow {
+      right: 6px;
+      top: 42%;
+    }
+
+    .rec-pagination {
+      .rec-dot {
+        background-color: rgba(30, 30, 30, 0.42);
+        width: 8px;
+        height: 8px;
+        margin-right: 8px;
+        box-shadow: none !important;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .rec-dot_active {
+        opacity: 1;
+        background-color: var(--main-green-color) !important;
+        box-shadow: none;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        &:hover {
+          box-sizing: none !important;
+        }
+      }
+    }
+  }
+
+  .rec-arrow-left {
+    position: absolute;
+    left: 8px;
+    z-index: 11;
+  }
+
+  /* hide disabled buttons */
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+
+  .rec-carousel-item:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+#MostPopular_most_popular__ZmWsq,
+section#PatientStories_patient_stories__oSemC,
+#procedures_symptoms_medical_department__tzR90,
+#_slug__before_after__Pt2ZF,
+#_slug__steps__dD3sT,
+#_slug__treatment_desc__VG0U3 {
+  .rec {
+    .rec-item-wrapper {
+      // overflow-x: hidden !important;
+      // overflow: unset !important;
+    }
+
+    .rec .rec-item-wrapper {
+      // overflow: unset;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .main_btn[disabled] {
+      // background: red;
+      visibility: hidden;
+    }
+
+    .rec-carousel {
+      // height: 600px !important;
+      position: relative;
+      .left_arrow,
+      .right_arrow {
+        background-color: var(--main-white-color);
+        box-shadow: 0px 3px 6px #00000029;
+
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 33%;
+
+        svg {
+          color: var(--main-gray-color);
+          font-size: 25px;
+        }
+      }
+
+      .right_arrow {
+        right: -23px;
+      }
+      .left_arrow {
+        left: -23px;
+      }
+    }
+  }
+
+  .rec-pagination {
+    margin-top: 32px;
+
+    @media screen and (max-width: 992px) {
+      margin-top: 15px;
+    }
+    .rec-dot {
+      background-color: rgba(30, 30, 30, 0.42);
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      box-shadow: none !important;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .rec-dot_active {
+      opacity: 1;
+      background-color: var(--main-green-color) !important;
+      box-shadow: none;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      &:hover {
+        box-sizing: none !important;
+      }
+    }
+  }
+
+  .rec .rec-slider-container {
+    margin: 0 !important;
+  }
+}
+
+#Search_search__ExkSK {
+  .rec-slider-container {
+    margin: 0;
+  }
+}
+
+#procedures_symptoms_medical_department__tzR90 {
+  .rec-carousel {
+    .right_arrow {
+      right: -13px !important;
+    }
+    .left_arrow {
+      left: -36px !important;
+    }
+
+    .left_arrow,
+    .right_arrow {
+      top: 30% !important;
+    }
+  }
+
+  .rec .rec-slider-container {
+    @media screen and (min-width: 992px) {
+      overflow-x: scroll;
+    }
+    &::-webkit-scrollbar {
+      height: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #8d8d8d;
+      display: block !important;
+    }
+  }
+}
+
+#_slug__steps__dD3sT {
+  .rec-carousel {
+    .right_arrow {
+      right: -13px !important;
+    }
+    .left_arrow {
+      left: -36px !important;
+    }
+
+    .left_arrow,
+    .right_arrow {
+      top: 60% !important;
+    }
+  }
+  .rec-carousel-item {
+    @media screen and (min-width: 992px) {
+      &:not(:last-child) {
+        ._name__steps_container__hk08j {
+          ._name__step__4lBQo {
+            span {
+              &::after {
+                position: absolute;
+                content: "";
+                width: 240px;
+                height: 3px;
+
+                top: 50%;
+                left: 10%;
+                transform: translateY(-0%);
+                z-index: -1;
+                background-color: var(--main-green-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#_slug__treatment_desc__VG0U3 {
+  .rec-carousel {
+    .right_arrow {
+      right: -13px !important;
+    }
+    .left_arrow {
+      left: -13px !important;
+    }
+
+    .left_arrow,
+    .right_arrow {
+      top: 50% !important;
+    }
+  }
+
+  .rec-carousel-item {
+    &:not(:last-child) {
+      ._name__steps_container__hk08j {
+        ._name__step__4lBQo {
+          span {
+            &::after {
+              position: absolute;
+              content: "";
+              width: 300px;
+              height: 3px;
+
+              top: 50%;
+              left: 10%;
+              transform: translateY(-0%);
+              z-index: -1;
+              background-color: var(--main-green-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Scroll bar
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background: var(--main-green-color);
+}
+
+// select color
+
+::selection {
+  color: var(--main-white-color);
+
+  background: var(--main-cyan-color);
+}
+
+@media screen and (min-width: 992px) {
+  .css-16qrewc-MuiContainer-root,
+  .css-1tgy85v-MuiContainer-root {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.MuiContainer-root {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+.mycontainer {
+  padding-right: 0px !important;
+  padding-left: 20px !important;
+}

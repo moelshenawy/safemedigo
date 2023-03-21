@@ -1,0 +1,370 @@
+#about_us {
+  // margin-top: 56px;
+  // background: #fafafa;
+
+  .boxes_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .SafeHealthcare,
+    .YouComeFirst,
+    .StressFreeTreatment,
+    .AllInclusiveCare {
+      display: flex;
+      align-items: center;
+
+      margin-top: 95px;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+        margin-top: 46px;
+
+        background-color: rgba(197, 223, 220, 0.2);
+        padding: 15px;
+        border-radius: 5px;
+      }
+
+      &:first-child {
+        @media screen and (max-width: 992px) {
+          margin-top: 15px;
+        }
+      }
+
+      .text_container {
+        .title {
+          display: flex;
+
+          h3 {
+            color: var(--main-dark-color);
+
+            font-size: 34px;
+            font-weight: var(--font-sem-bold);
+            font-family: var(--quickstand-font);
+
+            @media screen and (max-width: 992px) {
+              font-size: 23px;
+              font-weight: var(--font-bold);
+            }
+          }
+        }
+
+        .desc {
+          margin-top: 16px;
+          width: 605px;
+
+          @media screen and (max-width: 992px) {
+            width: 100%;
+          }
+
+          p {
+            color: var(--main-dark-color);
+
+            font-size: 16px;
+            font-weight: var(--font-regular);
+            font-family: var(--open-sans-font);
+          }
+        }
+      }
+
+      .img_container {
+        // width: 315.91px;
+        // height: 212px;
+
+        @media screen and (max-width: 992px) {
+          margin-bottom: 16px;
+          width: 100%;
+          height: 210px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        img {
+          // width: 100%;
+          // height: 100%;
+          @media screen and (max-width: 992px) {
+            width: 270px;
+            height: 170px;
+          }
+
+          @media screen and (max-width: 350px) {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .icon_container {
+          @media screen and (max-width: 992px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .YouComeFirst,
+    .AllInclusiveCare {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-self: flex-end;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+      }
+      .text_container {
+        margin-left: 90px;
+        @media screen and (max-width: 992px) {
+          margin-left: 0px;
+        }
+      }
+    }
+
+    .SafeHealthcare,
+    .StressFreeTreatment {
+      .text_container {
+        margin-right: 90px;
+
+        @media screen and (max-width: 992px) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .SafeHealthcare {
+      .img_container {
+        position: relative;
+        .icon_container {
+          position: absolute;
+          bottom: -233px;
+          left: -259px;
+          z-index: -1;
+        }
+      }
+    }
+
+    .YouComeFirst {
+      .img_container {
+        position: relative;
+        .icon_container {
+          position: absolute;
+          bottom: -234px;
+          right: -275px;
+          z-index: -1;
+        }
+      }
+    }
+
+    .StressFreeTreatment {
+      .img_container {
+        position: relative;
+        .icon_container {
+          position: absolute;
+          bottom: -185px;
+          left: -223px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+#who_is_safemedigo,
+#founders,
+#medical_councilors,
+#team,
+#patient_mangers {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: 992px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .section_container {
+    .title {
+      margin-bottom: 16px;
+      text-align: center;
+
+      h2 {
+        font-size: 34px;
+        font-weight: var(--font-sem-bold);
+        font-family: var(--quickstand-font);
+
+        color: var(--main-dark-color);
+
+        @media screen and (max-width: 992px) {
+          font-size: 22px;
+          font-weight: var(--font-bold);
+        }
+      }
+
+      p {
+        color: var(--main-dark-color);
+
+        font-size: 18px;
+        font-weight: var(--font-sem-bold);
+        font-family: var(--open-sans-font);
+
+        @media screen and (max-width: 992px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .desc {
+      margin-bottom: 25px;
+      text-align: center;
+
+      p {
+        color: var(--main-dark-color);
+
+        letter-spacing: 0.3px;
+        font-size: 18px;
+        font-weight: var(--font-sem-bold);
+        font-family: var(--open-sans-font);
+
+        @media screen and (max-width: 992px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .boxes_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 46px;
+      .box,
+      .founder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width: 992px) {
+          align-items: left;
+        }
+
+        .img_container {
+          width: 120px;
+          height: 120px;
+
+          margin-bottom: 16px;
+
+          @media screen and (max-width: 992px) {
+            width: 50px;
+            height: 50px;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+        }
+
+        .name {
+          margin-bottom: 8px;
+          p {
+            color: var(--main-dark-color);
+
+            font-weight: var(--font-bold);
+            font-family: var(--open-sans-font);
+            font-size: 18px;
+
+            @media screen and (max-width: 992px) {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .job {
+          p {
+            color: var(--main-dark-color);
+
+            font-weight: var(--font-regular);
+            font-family: var(--open-sans-font);
+            font-size: 16px;
+          }
+        }
+
+        .desc {
+          p {
+            color: var(--main-dark-color);
+
+            font-size: 16px;
+            font-weight: var(--font-regular);
+            font-family: var(--open-sans-font);
+          }
+        }
+      }
+    }
+  }
+}
+
+#medical_councilors,
+#patient_mangers {
+  background-color: #ebf2f2;
+}
+
+#patient_mangers,
+#team {
+  .section_container {
+    .title {
+      margin-bottom: 52px;
+    }
+
+    .boxes_container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 90px;
+      grid-row-gap: 0px;
+
+      @media screen and (max-width: 992px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+      }
+    }
+  }
+}
+
+#who_is_safemedigo {
+  .section_container {
+    background-color: #c5dfdc33;
+    padding: 59px 24px;
+    border-radius: 5px;
+  }
+}
+
+#medical_councilors {
+  .boxes_container {
+    justify-content: space-between;
+    // align-items: flex-end !important;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+    }
+    .box {
+      align-items: flex-start;
+      width: 250px;
+
+      @media screen and (max-width: 992px) {
+        width: 100%;
+
+        align-items: center;
+        justify-self: center;
+      }
+
+      .desc {
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

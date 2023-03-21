@@ -1,0 +1,271 @@
+nav#navbar_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0px 3px 6px #0000000d;
+
+  @media screen and (min-width: 992px) {
+    align-items: flex-start;
+  }
+
+  @media screen and (max-width: 992px) {
+    box-shadow: none !important;
+  }
+
+  .logo {
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      img {
+        width: 51px;
+        height: 45px;
+        margin-right: 13px;
+      }
+
+      h1 {
+        color: var(--main-green-color);
+        font-size: 23px;
+        font-family: var(--font-medium);
+        letter-spacing: 0px;
+      }
+    }
+  }
+
+  .back_btn {
+    margin-bottom: -6px;
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+
+    svg {
+      color: var(--main-dark-color);
+      font-size: 25px;
+    }
+  }
+
+  .input_container {
+    position: relative;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+
+    input {
+      width: 926px;
+      height: 56px;
+      background-color: rgb(250 250 250 / 80%);
+      opacity: 0.8;
+
+      border: none;
+      border-radius: 40px;
+
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 28px;
+
+      color: var(--main-dark-color);
+      font-size: 18px;
+      font-family: var(--open-sans-font);
+      font-weight: 600;
+      @media screen and (max-width: 992px) {
+        font-size: 16px;
+
+        padding-top: 17px;
+        padding-bottom: 20px;
+        padding-left: 12px;
+      }
+
+      &::placeholder {
+        color: var(--main-dark-color);
+        font-size: 18px;
+        font-family: var(--open-sans-font);
+        font-weight: 600;
+
+        @media screen and (max-width: 992px) {
+          font-size: 16px;
+        }
+      }
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+
+      @media screen and (max-width: 992px) {
+        width: 100%;
+        border: none;
+        border-radius: 0%;
+      }
+    }
+
+    .close_icon {
+      position: absolute;
+      top: 10px;
+      right: 22px;
+      z-index: 1;
+      @media screen and (max-width: 992px) {
+        top: 15px;
+        right: 0;
+      }
+      svg {
+        color: var(--main-dark-color);
+        font-size: 31.2px;
+        font-weight: bold;
+
+        @media screen and (max-width: 992px) {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
+
+.search_bg {
+  background-color: var(--main-green-color);
+  height: 100vh;
+  #search_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    // .text_container {
+    //   width: 300px;
+    //   margin-right: 17px;
+    //   margin-top: 80px;
+    //   @media screen and (max-width: 992px) {
+    //     display: none;
+    //   }
+
+    //   p {
+    //     color: var(--sec-cyan-color);
+    //     font-size: 34px;
+    //     font-family: var(--font-sem-bold);
+    //     letter-spacing: 0px;
+    //     font-weight: normal;
+    //   }
+    // }
+
+    @media screen and (min-width: 992px) {
+      margin-right: 20px;
+    }
+
+    .results_card {
+      width: 930px;
+      box-shadow: 0px 3px 20px #00000029;
+      border-radius: 8px;
+      background-color: var(--main-white-color);
+      margin-top: 10px;
+
+      height: 665px;
+      overflow: hidden;
+      overflow-y: scroll;
+
+      @media screen and (max-width: 992px) {
+        margin-top: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .card_header {
+        padding-left: 38px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 33px;
+        background-color: var(--main-white-color);
+
+        @media screen and (max-width: 992px) {
+          padding-left: 30px;
+          padding-top: 0;
+        }
+
+        p {
+          color: var(--main-dark-color);
+          font-size: 18px;
+          font-family: var(--font-sem-bold);
+          font-weight: 600;
+          @media screen and (max-width: 992px) {
+            font-size: 16px;
+            font-weight: 400;
+            padding-bottom: 10px;
+          }
+        }
+      }
+
+      .card_inner {
+        margin-top: 19px;
+
+        .box {
+          margin-top: 12px;
+
+          .title {
+            margin-left: 31px;
+            margin-bottom: 11px;
+
+            @media screen and (max-width: 992px) {
+              margin-left: 30px;
+              margin-top: 30px;
+            }
+
+            h4 {
+              color: var(--main-green-color);
+              font-size: 20px;
+              font-family: var(--open-sans-font);
+              font-weight: bold;
+              @media screen and (max-width: 992px) {
+                color: var(--main-cyan-color);
+                font-size: 16px;
+              }
+            }
+          }
+
+          a {
+            text-decoration: none;
+
+            .name {
+              margin-left: 41px;
+              margin-right: 39px;
+              border-bottom: 1px solid #c5dfdc;
+              margin-bottom: 12px;
+              @media screen and (max-width: 992px) {
+                margin-right: 35px;
+                margin-left: 35px;
+              }
+              p {
+                font-size: 18px;
+                color: var(--main-dark-color);
+                font-family: var(--open-sans-font);
+                font-weight: 600;
+              }
+
+              .page {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-top: 8px;
+                padding-bottom: 20px;
+
+                p {
+                  font-size: 14px;
+                  color: #a1a1a1;
+                  font-family: var(--open-sans-font);
+                  font-weight: normal;
+                }
+
+                .icon_container {
+                  svg {
+                    color: #c5dfdc;
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

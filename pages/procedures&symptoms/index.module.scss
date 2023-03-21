@@ -1,0 +1,351 @@
+#medical_department {
+  padding-top: 48px;
+
+  .section_container {
+    .sec_header {
+      width: 100%;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+        // flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .title {
+        margin-bottom: 30px;
+        color: var(--main-dark-color);
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 992px) {
+          // width: 56%;
+          align-items: flex-start;
+          flex-direction: column;
+          margin-bottom: 15px;
+        }
+
+        h3 {
+          font-family: var(--quickstand-font);
+          font-weight: var(--font-sem-bold);
+          font-size: 28px;
+          margin-bottom: 10px;
+
+          @media screen and (max-width: 992px) {
+            font-size: 23px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .procedures_num {
+        @media screen and (max-width: 992px) {
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        h6 {
+          font-family: var(--quickstand-font);
+          font-weight: var(--font-medium);
+          font-size: 18px;
+
+          @media screen and (max-width: 992px) {
+            font-size: 16px;
+          }
+        }
+        p {
+          font-family: var(--quickstand-font);
+          font-weight: var(--font-medium);
+          font-size: 18px;
+          color: var(--main-dark-color);
+
+          @media screen and (max-width: 992px) {
+            font-size: 16px;
+            line-height: 1rem;
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+
+    .slider_container {
+      position: relative;
+
+      @media screen and (min-width: 992px) {
+        &::after {
+          position: absolute;
+          content: "";
+          width: 40px;
+          height: 100%;
+          background: transparent
+            linear-gradient(
+              270deg,
+              #000000a1 0%,
+              #2a2a2a51 21%,
+              #4b4b4b11 66%,
+              #54545400 100%
+            )
+            0% 0% no-repeat padding-box;
+          opacity: 0.11;
+          top: 0;
+          right: 0px;
+        }
+      }
+      .box {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        // background-color: transparent
+        //   linear-gradient(270deg, #e1e1e1 0%, #f0f0f0 50%, #e2e2e2 100%) 0% 0%
+        //   no-repeat padding-box;
+        background-color: #f4f9f8;
+        opacity: 1;
+
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        margin-bottom: 20px;
+        padding-top: 8.22px;
+        padding-bottom: 12px;
+        padding-left: 9px;
+        padding-right: 12px;
+
+        transition: all 0.5s ease;
+
+        &:hover {
+          background-color: var(--sec-green-color);
+
+          .img_container {
+            .sec_img {
+              opacity: 1;
+            }
+            .main_img {
+              opacity: 0;
+              display: none;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+
+        @media screen and (max-width: 992px) {
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 15px;
+          padding-top: 10px;
+          padding-left: 5px;
+          padding-right: 5px;
+          width: 215px;
+          height: 75px;
+        }
+
+        @media screen and (min-width: 992px) {
+          width: 273px;
+          height: 89px;
+        }
+
+        .img_container {
+          width: 77.12px;
+          height: 77.12px;
+
+          @media screen and (max-width: 992px) {
+            width: 60px;
+            height: 60px;
+            margin-left: 5px;
+          }
+
+          @media screen and (min-width: 992px) {
+            margin-right: 20px;
+          }
+
+          .main_img {
+            width: 100%;
+            height: 100%;
+          }
+
+          .sec_img {
+            width: 100%;
+            height: 100%;
+          }
+
+          .sec_img {
+            opacity: 0;
+          }
+        }
+
+        .box_title {
+          width: 66%;
+          text-align: left;
+          overflow-wrap: break-word;
+
+          @media screen and (max-width: 992px) {
+            width: 63%;
+            margin-left: 6px;
+            margin-right: 0;
+
+            overflow-wrap: break-word;
+          }
+
+          h6 {
+            font-size: 18px;
+            color: var(--main-dark-color);
+            font-weight: var(--font-sem-bold);
+            font-family: var(--quickstand-font);
+            line-height: 1.2rem;
+            letter-spacing: 0px;
+            line-height: 1.5rem;
+
+            @media screen and (max-width: 992px) {
+              margin-top: 0px;
+              font-size: 14px;
+
+              line-height: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    .mobile_slider {
+      // margin-top: 50px;
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
+    }
+  }
+}
+
+section.proceduresSymptoms {
+  padding-bottom: 40px;
+  padding-top: 32px;
+  margin-top: 48px;
+
+  @media screen and (max-width: 992px) {
+    padding-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  .card_title {
+    h3 {
+      font-size: 28px;
+      font-weight: var(--font-sem-bold);
+      font-family: var(--quickstand-font);
+      margin-bottom: 25px;
+
+      @media screen and (max-width: 992px) {
+        font-size: 23px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .section_container {
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+
+    .filter_section {
+      width: 701px;
+      margin-right: 55px;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
+
+      .btn_container {
+        margin-top: 40px;
+        button {
+          cursor: pointer;
+          width: 204px;
+          height: 56px;
+
+          background-color: var(--main-green-color);
+          color: var(--main-white-color);
+
+          border-radius: 5px;
+          border: 1px solid var(--main-green-color);
+
+          font-size: 18px;
+          font-weight: var(--font-bold);
+          font-family: var(--quickstand-font);
+          @media screen and (max-width: 992px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .info {
+      .info_inner {
+        width: 452px;
+        padding: 24px;
+        background-color: var(--main-white-color);
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 10px;
+        @media screen and (max-width: 992px) {
+          margin-bottom: 30px;
+          width: 100%;
+        }
+      }
+
+      .info_header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 992px) {
+          margin-bottom: 10px;
+        }
+        .img_container {
+          width: 80px;
+          height: 80px;
+          margin-right: 15px;
+
+          @media screen and (max-width: 992px) {
+            width: 60px;
+            height: 60px;
+          }
+
+          img {
+            height: 100%;
+            width: 100%;
+            @media screen and (max-width: 992px) {
+              width: auto;
+            }
+          }
+        }
+        .title {
+          h3 {
+            font-size: 18px;
+            font-weight: var(--font-bold);
+            font-family: var(--quickstand-font);
+            color: var(--main-dark-colo);
+            letter-spacing: 0;
+            line-height: 1rem;
+          }
+        }
+      }
+
+      .desc {
+        p {
+          font-size: 18px;
+          font-weight: var(--font-medium);
+          font-family: var(--quickstand-font);
+
+          @media screen and (max-width: 992px) {
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}

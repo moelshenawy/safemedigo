@@ -1,0 +1,196 @@
+section#treatment_category {
+  padding-top: 52px;
+  padding-bottom: 42px;
+
+  @media screen and (max-width: 992px) {
+    padding-bottom: 30px;
+    padding-top: 31px;
+  }
+
+  .section_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @media screen and (max-width: 992px) {
+      align-items: flex-start;
+    }
+
+    .sec_title {
+      margin-bottom: 40px;
+      width: 100%;
+      text-align: left;
+
+      @media screen and (max-width: 992px) {
+        margin-bottom: 30px;
+      }
+      h2 {
+        color: var(--main-dark-color);
+        font-size: 34px;
+        font-weight: var(--font-bold);
+        font-family: var(--quickstand-font);
+
+        @media screen and (max-width: 992px) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .desc {
+      margin-bottom: 40px;
+
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
+      p {
+        color: var(--main-dark-color);
+        font-size: 16px;
+        font-family: var(--quickstand-font);
+        font-weight: var(--font-regular);
+      }
+    }
+
+    .boxes_container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 79px;
+      grid-row-gap: 20px;
+
+      width: 100%;
+      @media screen and (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+      }
+
+      .box {
+        // width: 100px;
+        display: flex;
+        align-items: center;
+        // margin-right: 90px;
+        cursor: default;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+
+        &:not(:last-child) {
+          // margin-right: 85px;
+          @media screen and (max-width: 992px) {
+            margin-right: 0;
+          }
+        }
+
+        .img_container {
+          width: 87px;
+          height: 87px;
+          margin-bottom: 15px;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          border: none;
+          margin-right: 16px;
+          transition: all 0.3s ease;
+
+          @media screen and (max-width: 992px) {
+            width: 50px;
+            height: 50px;
+            margin-right: 12px;
+          }
+
+          .default_icon,
+          .hovered_icon {
+            width: 87px;
+            height: 87px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+            margin-right: 16px;
+            transition: all 0.3s ease;
+            opacity: 1;
+
+            @media screen and (max-width: 992px) {
+              width: 55px;
+              height: 55px;
+            }
+          }
+
+          .hovered_icon {
+            display: none;
+            transition: all 0.3s ease;
+            opacity: 0;
+          }
+        }
+
+        .title {
+          margin-bottom: 6px;
+
+          @media screen and (max-width: 992px) {
+            max-width: 100%;
+          }
+
+          h6 {
+            font-size: 21px;
+            color: var(--main-dark-color);
+
+            font-weight: var(--font-medium);
+            font-family: var(--quickstand-font);
+            line-height: 1.5rem;
+
+            @media screen and (max-width: 992px) {
+              font-size: 14px;
+            }
+          }
+        }
+
+        &:hover {
+          background: transparent
+            linear-gradient(270deg, #fafafa 0%, #fafafa00 100%) 0% 0% no-repeat
+            padding-box;
+          border-radius: 22px;
+          .default_icon {
+            display: none;
+            opacity: 0;
+            transition: all 0.3s ease;
+          }
+          .hovered_icon {
+            transition: all 0.3s ease;
+            opacity: 1;
+            display: block;
+          }
+        }
+      }
+    }
+
+    .btn_contianer {
+      align-self: flex-end;
+      margin-bottom: 0px;
+      margin-right: 10px;
+
+      @media screen and (max-width: 992px) {
+        margin-left: -11px;
+        margin-top: -11px;
+      }
+
+      button {
+        color: var(--sec-cyan-color);
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        font-weight: var(--font-medium);
+        font-family: var(--quickstand-font);
+        text-decoration: underline;
+        @media screen and (max-width: 992px) {
+          font-size: 14px;
+          font-weight: var(--font-medium);
+        }
+      }
+    }
+  }
+}

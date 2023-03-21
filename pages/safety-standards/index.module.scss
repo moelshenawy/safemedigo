@@ -1,0 +1,229 @@
+#safetyStandards {
+  // margin-top: 56px;
+  // background: #fafafa;
+  padding-bottom: 90px;
+
+  @media screen and (max-width: 992px) {
+    padding-bottom: 46px;
+  }
+
+  .boxes_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .reviewedExperts,
+    .modernHealthcare,
+    .firstClassMedicalServices,
+    .patientFeedback,
+    .treatmentCharges,
+    .clarityConcerning {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 95px;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+        margin-top: 46px;
+
+        background-color: rgba(197, 223, 220, 0.2);
+        padding: 15px;
+        border-radius: 5px;
+      }
+
+      &:first-child {
+        @media screen and (max-width: 992px) {
+          margin-top: 15px;
+        }
+      }
+
+      .text_container {
+        width: 605px;
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+
+        .title {
+          display: flex;
+
+          h3 {
+            color: var(--main-dark-color);
+
+            font-size: 34px;
+            font-weight: var(--font-sem-bold);
+            font-family: var(--quickstand-font);
+
+            @media screen and (max-width: 992px) {
+              font-size: 22px;
+              font-weight: var(--font-bold);
+              font-family: var(--quickstand-font);
+            }
+          }
+        }
+
+        .desc {
+          margin-top: 16px;
+          width: 605px;
+
+          @media screen and (max-width: 992px) {
+            width: 100%;
+          }
+
+          p {
+            color: var(--main-dark-color);
+
+            font-size: 16px;
+            font-weight: var(--font-regular);
+            font-family: var(--open-sans-font);
+          }
+        }
+
+        .list {
+          .list_title {
+            margin-top: 20px;
+            p {
+              font-size: 16px;
+              font-weight: var(--font-regular);
+              font-family: var(--open-sans-font);
+              color: var(--main-dark-color);
+            }
+          }
+          ul {
+            margin-top: 20px;
+            li {
+              // background: red;
+
+              font-size: 16px;
+              font-weight: var(--font-regular);
+              font-family: var(--open-sans-font);
+              color: var(--main-dark-color);
+              position: relative;
+              margin-bottom: 5px;
+              margin-left: 18px;
+
+              list-style-type: disc;
+
+              &::marker {
+                color: var(--main-green-color);
+              }
+              // list-style-position: inside;
+            }
+          }
+        }
+      }
+
+      .img_container {
+        // width: 315.91px;
+        // height: 212px;
+        position: relative;
+
+        @media screen and (max-width: 992px) {
+          margin-bottom: 16px;
+          width: 100%;
+          height: 210px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        img {
+          // width: 100%;
+          // height: 100%;
+
+          @media screen and (max-width: 992px) {
+            width: 270px;
+            height: 170px;
+          }
+
+          @media screen and (max-width: 350px) {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .icon_container {
+          position: absolute;
+          z-index: -1;
+
+          @media screen and (max-width: 992px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .modernHealthcare,
+    .patientFeedback,
+    .clarityConcerning {
+      flex-direction: row-reverse;
+
+      justify-content: space-between;
+      align-self: flex-end;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+      }
+      .text_container {
+        // margin-right: 65px;
+      }
+    }
+
+    .reviewedExperts {
+      .img_container {
+        .icon_container {
+          bottom: -215px;
+          left: -290px;
+        }
+      }
+    }
+
+    // .patientFeedback,
+    // .modernHealthcare {
+    //   .img_container {
+    //     .icon_container {
+    //       bottom: -215px;
+    //       right: -290px;
+    //     }
+    //   }
+    // }
+
+    .modernHealthcare {
+      .img_container {
+        .icon_container {
+          bottom: -297px;
+          right: -385px;
+        }
+      }
+    }
+
+    .firstClassMedicalServices {
+      .img_container {
+        .icon_container {
+          bottom: -329px;
+          left: -371px;
+        }
+      }
+    }
+
+    .patientFeedback {
+      .img_container {
+        .icon_container {
+          bottom: -436px;
+          right: -371px;
+        }
+      }
+    }
+
+    .treatmentCharges {
+      .img_container {
+        .icon_container {
+          bottom: -297px;
+          left: -337px;
+        }
+      }
+    }
+  }
+}

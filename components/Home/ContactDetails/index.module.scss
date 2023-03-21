@@ -1,0 +1,262 @@
+#contact_details {
+  .section_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 106px;
+    grid-row-gap: 0px;
+
+    padding-top: 58px;
+    padding-bottom: 56px;
+
+    @media screen and (max-width: 992px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      // grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 1px;
+      grid-row-gap: 0px;
+      padding-bottom: 0px;
+    }
+
+    .talk {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media screen and (max-width: 992px) {
+        justify-content: center;
+        margin-bottom: 35px;
+      }
+
+      @media screen and (min-width: 992px) {
+        width: 108%;
+      }
+      .title {
+        h3 {
+          font-size: 26px;
+          color: var(--main-dark-color);
+          letter-spacing: 0;
+          line-height: 3rem;
+
+          font-weight: var(--font-sem-bold);
+          font-family: var(--quickstand-font);
+
+          @media screen and (max-width: 992px) {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .sec_title {
+        margin-top: 20px;
+        @media screen and (max-width: 992px) {
+          margin-bottom: 0px;
+          display: none;
+        }
+
+        a {
+          font-size: 26px;
+          font-weight: var(--font-sem-bold);
+          font-family: var(--quickstand-font);
+          color: var(--main-green-color);
+          letter-spacing: 0;
+        }
+      }
+
+      .desc {
+        margin-top: 25px;
+        p {
+          color: var(--main-dark-color);
+          font-size: 16px;
+          letter-spacing: 0;
+          font-weight: var(--font-regular);
+          font-family: var(--quickstand-font);
+        }
+      }
+
+      .buttons_container {
+        margin-top: 22px;
+
+        .btn {
+          &:not(:last-child) {
+            margin-bottom: 5.51px;
+          }
+
+          a {
+            button {
+              width: 100%;
+              height: 48px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all 0.3s ease;
+
+              border-radius: 5px;
+              background-color: var(--main-green-color);
+              border: 1px solid var(--main-dark-color);
+              color: var(--main-white-color);
+              font-size: 16px;
+
+              font-weight: var(--font-sem-bold);
+              font-family: var(--open-sans-font);
+
+              cursor: pointer;
+
+              svg {
+                margin-right: 15px;
+                // width: 17px;
+                // height: 17px;
+                path {
+                  transition: all 0.3s ease;
+                  fill: var(--main-white-color);
+                }
+              }
+
+              &:hover {
+                background-color: var(--main-white-color);
+                color: var(--main-green-color);
+                svg {
+                  path {
+                    fill: var(--main-green-color);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .personal_manger {
+      @media screen and (max-width: 992px) {
+        order: -1;
+        margin-bottom: 35px;
+      }
+
+      .box {
+        background-color: var(--main-green-color);
+        border-radius: 5px;
+
+        width: 344px;
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+
+        .img_container {
+          width: 100%;
+          height: 196px;
+          img {
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .text_container {
+          padding-left: 22px;
+          padding-right: 22px;
+          .job {
+            margin-top: 16px;
+            p {
+              color: var(--main-white-color);
+              font-size: 18px;
+              letter-spacing: 0;
+
+              font-weight: var(--font-regular);
+              font-family: var(--quickstand-font);
+            }
+          }
+
+          .name {
+            margin-top: 8px;
+            margin-bottom: 8px;
+
+            p {
+              color: var(--sec-cyan-color);
+              font-size: 24px;
+              letter-spacing: 0;
+
+              font-weight: var(--font-bold);
+              font-family: var(--quickstand-font);
+            }
+          }
+
+          .desc {
+            p {
+              letter-spacing: 0;
+              color: var(--main-white-color);
+              font-size: 16px;
+
+              font-weight: var(--font-regular);
+              font-family: var(--quickstand-font);
+            }
+          }
+
+          .btn {
+            margin-top: 16.51px;
+            a {
+              button {
+                width: 100%;
+                height: 48px;
+                cursor: pointer;
+                background-color: var(--sec-white-color);
+                color: var(--main-green-color);
+
+                border-radius: 5px;
+                border: none;
+
+                font-size: 18px;
+                margin-bottom: 20px;
+
+                font-weight: var(--font-bold);
+                font-family: var(--quickstand-font);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @media screen and (max-width: 992px) {
+        justify-content: flex-start;
+        height: fit-content;
+        display: none;
+      }
+
+      .contact,
+      .address {
+        p {
+          margin-top: 20px;
+          font-weight: var(--font-medium);
+          font-family: var(--open-sans-font);
+          color: var(--main-dark-color);
+          font-size: 16px;
+
+          @media screen and (max-width: 992px) {
+            margin-bottom: 0px;
+          }
+        }
+
+        p:first-child {
+          color: var(--main-green-color);
+          font-size: 16px;
+
+          font-weight: var(--font-bold);
+          font-family: var(--quickstand-font);
+        }
+      }
+      .contact {
+      }
+      .address {
+      }
+    }
+  }
+}

@@ -1,0 +1,243 @@
+#how_it_works {
+  // margin-top: 56px;
+  // background: #fafafa;
+  padding-bottom: 56px;
+
+  @media screen and (max-width: 992px) {
+    padding-bottom: 46px;
+  }
+
+  .boxes_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .research,
+    .GetInTouch,
+    .ReadyToGo,
+    .SafetyTreatment,
+    .CheckAfterTreatmen,
+    .IDidIt {
+      display: flex;
+      max-width: 995px;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 108px;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+        margin-top: 46px;
+        max-width: 100% !important;
+
+        background-color: rgba(197, 223, 220, 0.2);
+        padding: 15px;
+        border-radius: 5px;
+      }
+
+      &:first-child {
+        @media screen and (max-width: 992px) {
+          margin-top: 15px;
+        }
+      }
+
+      .text_container {
+        .title {
+          display: flex;
+
+          .num {
+            width: 48px;
+            height: 48px;
+
+            background-color: var(--sec-green-color);
+            margin-right: 33px;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media screen and (max-width: 992px) {
+              display: none;
+            }
+
+            span {
+              color: var(--main-dark-color);
+
+              font-size: 34px;
+              font-weight: var(--font-sem-bold);
+            }
+          }
+
+          h3 {
+            color: var(--main-dark-color);
+
+            font-size: 34px;
+            font-weight: var(--font-sem-bold);
+            font-family: var(--quickstand-font);
+
+            @media screen and (max-width: 992px) {
+              font-size: 22px;
+              font-weight: var(--font-bold);
+              font-family: var(--quickstand-font);
+            }
+          }
+        }
+
+        .desc {
+          margin-top: 16px;
+          p {
+            color: var(--main-dark-color);
+
+            font-size: 16px;
+            font-weight: var(--font-regular);
+            font-family: var(--open-sans-font);
+          }
+        }
+      }
+
+      .img_container {
+        width: 301.86px;
+        height: 202.08px;
+
+        @media screen and (max-width: 992px) {
+          // background-color: #e7edec;
+          border-radius: 5px;
+          margin-bottom: 16px;
+          width: 100%;
+          height: 210px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        img {
+          // width: 100%;
+          // height: 100%;
+          @media screen and (max-width: 992px) {
+            width: 270px;
+            height: 170px;
+          }
+
+          @media screen and (max-width: 350px) {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .icon_container {
+          @media screen and (max-width: 992px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .GetInTouch,
+    .SafetyTreatment,
+    .IDidIt {
+      flex-direction: row-reverse;
+
+      justify-content: flex-start;
+      max-width: 100%;
+      width: 100%;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column-reverse;
+        justify-self: center;
+      }
+
+      .text_container {
+        margin-left: 90px;
+        width: 506px;
+
+        @media screen and (max-width: 992px) {
+          margin-left: 0px;
+          width: 100%;
+        }
+      }
+    }
+
+    .research,
+    .ReadyToGo,
+    .CheckAfterTreatmen {
+      .text_container {
+        margin-right: 90px;
+
+        @media screen and (max-width: 992px) {
+          margin-right: 0px;
+        }
+      }
+
+      .desc {
+        width: 500px;
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .research {
+      .img_container {
+        position: relative;
+        .icon_container {
+          position: absolute;
+          bottom: -211px;
+          left: -259px;
+          z-index: -1;
+        }
+      }
+    }
+
+    .GetInTouch {
+      .img_container {
+        position: relative;
+        .icon_container {
+          position: absolute;
+          bottom: -246px;
+          left: 228px;
+          z-index: -1;
+        }
+      }
+    }
+
+    .ReadyToGo {
+      .img_container {
+        position: relative;
+        .icon_container {
+          position: absolute;
+          bottom: -182px;
+          left: -266px;
+          z-index: -1;
+        }
+      }
+    }
+
+    .SafetyTreatment {
+      .img_container {
+        position: relative;
+        .icon_container {
+          transform: rotate(180deg);
+          position: absolute;
+          bottom: -192px;
+          left: 284px;
+          z-index: -1;
+        }
+      }
+    }
+
+    .CheckAfterTreatmen {
+      .img_container {
+        position: relative;
+        .icon_container {
+          transform: rotate(180deg);
+          position: absolute;
+          bottom: -231px;
+          left: -324px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.066" height="24.565" viewBox="0 0 22.066 24.565">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #184d47;
+      }
+
+      .cls-2 {
+        fill: #f32669;
+      }
+    </style>
+  </defs>
+  <g id="Group_10319" data-name="Group 10319" transform="translate(-271 -12.651)">
+    <g id="Icon_ionic-ios-notifications" data-name="Icon ionic-ios-notifications" transform="translate(266.665 8.721)">
+      <path id="Path_8531" data-name="Path 8531" class="cls-1" d="M17.563,31.59c1.909,0,2.953-1.351,2.953-3.254H14.6C14.6,30.239,15.648,31.59,17.563,31.59Z" transform="translate(-0.995 -3.095)"/>
+      <path id="Path_8532" data-name="Path 8532" class="cls-1" d="M26.152,22.122c-.945-1.246-2.806-1.977-2.806-7.558,0-5.728-2.53-8.031-4.887-8.583-.221-.055-.381-.129-.381-.362V5.441a1.5,1.5,0,1,0-3,0v.178c0,.227-.16.307-.381.362-2.364.559-4.887,2.855-4.887,8.583,0,5.581-1.86,6.305-2.806,7.558a1.219,1.219,0,0,0,.976,1.952h17.2A1.219,1.219,0,0,0,26.152,22.122Z"/>
+    </g>
+    <circle id="Ellipse_352" data-name="Ellipse 352" class="cls-2" cx="6" cy="6" r="6" transform="translate(271 15)"/>
+  </g>
+</svg>
